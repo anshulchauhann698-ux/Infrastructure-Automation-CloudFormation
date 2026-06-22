@@ -35,6 +35,41 @@ This project demonstrates Infrastructure as Code (IaC) using AWS CloudFormation 
 * CloudFormation template design
 * Automated provisioning and deployment
 
+## Infrastructure Diagram
+
+```text
+                    AWS Cloud
+                         │
+                         ▼
+                 CloudFormation
+                         │
+                         ▼
+                    Amazon VPC
+                         │
+                         ▼
+                 Security Group
+                         │
+                         ▼
+                  EC2 Instance
+                         │
+                         ▼
+                   Web Server
+                    (Apache)
+                         │
+                         ▼
+                    Web Page
+```
+
+### Architecture Flow
+
+User → Web Browser → EC2 Instance → Apache Web Server
+
+CloudFormation automates the provisioning of VPC, Security Group, and EC2 resources through Infrastructure as Code (IaC) templates.
+
+```
+```
+
+
 ## Repository Structure
 
 templates/ → CloudFormation templates
